@@ -9,7 +9,7 @@
       "MovementSpeed": 2.2,
       "AttackRange": 3,
       "SiegeProgress": 0.30,
-      "RequiredTechID": 10,
+      "RequiredTechID": 500,
       "Cost": 420,
       "MaintenanceCost": 6.5,
       "RecruitmentTime": 90
@@ -23,7 +23,7 @@
       "MovementSpeed": 2.4,
       "AttackRange": 3,
       "SiegeProgress": 0.38,
-      "RequiredTechID": 10,
+      "RequiredTechID": 501,
       "Cost": 580,
       "MaintenanceCost": 9.0,
       "RecruitmentTime": 105
@@ -37,7 +37,7 @@
       "MovementSpeed": 2.6,
       "AttackRange": 4,
       "SiegeProgress": 0.48,
-      "RequiredTechID": 10,
+      "RequiredTechID": 502,
       "Cost": 780,
       "MaintenanceCost": 12.0,
       "RecruitmentTime": 120

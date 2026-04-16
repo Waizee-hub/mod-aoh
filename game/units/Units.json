@@ -1,5 +1,35 @@
 [
   {
+    "File": "Warior.json",
+    "ID": 0,
+    "Line": 0
+  },
+  {
+    "File": "Hoplites.json",
+    "ID": 1,
+    "Line": 0
+  },
+  {
+    "File": "Horseman.json",
+    "ID": 2,
+    "Line": 1
+  },
+  {
+    "File": "Archer.json",
+    "ID": 3,
+    "Line": 2
+  },
+  {
+    "File": "Canon.json",
+    "ID": 4,
+    "Line": 2
+  },
+  {
+    "File": "Airplane.json",
+    "ID": 5,
+    "Line": 2
+  },
+  {
     "File": "Frigate.json",
     "ID": 100,
     "Line": 0

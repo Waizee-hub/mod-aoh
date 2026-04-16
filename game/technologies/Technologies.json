@@ -1,0 +1,80 @@
+[
+  {
+    "ID": 500,
+    "Name": "NavalWarfare",
+    "ImageID": 500,
+    "TreeColumn": 20,
+    "TreeRow": 3,
+    "RequiredTech": -1,
+    "RequiredTech2": -1,
+    "BattleWidth": 0,
+    "ResearchCost": 150,
+    "Repeatable": false,
+    "AI": 3
+  },
+  {
+    "ID": 501,
+    "Name": "SteamPropulsion",
+    "ImageID": 501,
+    "TreeColumn": 21,
+    "TreeRow": 3,
+    "RequiredTech": 500,
+    "RequiredTech2": -1,
+    "BattleWidth": 0,
+    "ResearchCost": 280,
+    "Repeatable": false,
+    "AI": 4
+  },
+  {
+    "ID": 502,
+    "Name": "IronHulls",
+    "ImageID": 502,
+    "TreeColumn": 22,
+    "TreeRow": 3,
+    "RequiredTech": 501,
+    "RequiredTech2": -1,
+    "BattleWidth": 0,
+    "ResearchCost": 450,
+    "Repeatable": false,
+    "AI": 4
+  },
+  {
+    "ID": 503,
+    "Name": "SteelNavalEngineering",
+    "ImageID": 503,
+    "TreeColumn": 23,
+    "TreeRow": 3,
+    "RequiredTech": 502,
+    "RequiredTech2": -1,
+    "BattleWidth": 2,
+    "ResearchCost": 650,
+    "Repeatable": false,
+    "AI": 5
+  },
+  {
+    "ID": 504,
+    "Name": "ModernNavalGunnery",
+    "ImageID": 504,
+    "TreeColumn": 24,
+    "TreeRow": 3,
+    "RequiredTech": 503,
+    "RequiredTech2": -1,
+    "BattleWidth": 2,
+    "ResearchCost": 900,
+    "Repeatable": false,
+    "AI": 5
+  },
+  {
+    "ID": 505,
+    "Name": "NavalSupremacy",
+    "ImageID": 505,
+    "TreeColumn": 25,
+    "TreeRow": 3,
+    "RequiredTech": 504,
+    "RequiredTech2": -1,
+    "BattleWidth": 4,
+    "ResearchCost": 1300,
+    "Repeatable": false,
+    "AI": 6
+  }
+]
