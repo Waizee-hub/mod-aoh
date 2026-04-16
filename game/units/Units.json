@@ -18,5 +18,10 @@
     "File": "Battleship.json",
     "ID": 103,
     "Line": 0
+  },
+  {
+    "File": "Destroyer.json",
+    "ID": 104,
+    "Line": 0
   }
 ]

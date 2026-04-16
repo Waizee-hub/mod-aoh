@@ -82,6 +82,29 @@ def _ship_template(hull: tuple, deck: tuple, flag: tuple) -> list[list]:
     ]
 
 
+def _destroyer_template(hull: tuple, deck: tuple, torp: tuple) -> list[list]:
+    """16×16 slim top-down destroyer silhouette with torpedo tube markers."""
+    H, D, To = hull, deck, torp
+    return [
+        [T, T, T, T, T, T, T, H, H, T, T, T, T, T, T, T],
+        [T, T, T, T, T, T, H, D, D, H, T, T, T, T, T, T],
+        [T, T, T, T, T, H, D, D, D, D, H, T, T, T, T, T],
+        [T, T, T, T, H, H, D, To, To, D, H, H, T, T, T, T],
+        [T, T, T, H, H, D, D, D, D, D, D, H, H, T, T, T],
+        [T, T, H, H, D, D, D, D, D, D, D, D, H, H, T, T],
+        [T, H, H, D, D, D, D, D, D, D, D, D, D, H, H, T],
+        [T, H, H, D, D, D, D, D, D, D, D, D, D, H, H, T],
+        [T, H, H, D, D, D, D, D, D, D, D, D, D, H, H, T],
+        [T, T, H, H, D, D, D, D, D, D, D, D, H, H, T, T],
+        [T, T, T, H, H, D, D, To, To, D, D, H, H, T, T, T],
+        [T, T, T, T, H, H, D, D, D, D, H, H, T, T, T, T],
+        [T, T, T, T, T, H, D, D, D, D, H, T, T, T, T, T],
+        [T, T, T, T, T, H, H, D, D, H, H, T, T, T, T, T],
+        [T, T, T, T, T, T, H, H, H, H, T, T, T, T, T, T],
+        [T, T, T, T, T, T, T, H, H, T, T, T, T, T, T, T],
+    ]
+
+
 def _battleship_template(hull: tuple, deck: tuple, turret: tuple) -> list[list]:
     """16×16 larger-looking battleship silhouette."""
     H, D, Tu = hull, deck, turret
@@ -138,6 +161,10 @@ HULL_DKGRAY  = ( 60,  65,  70, 255)  # Battleship hull
 DECK_DKGRAY  = (100, 105, 110, 255)
 TURRET_DKGRAY= ( 35,  38,  42, 255)
 
+HULL_OLIVE   = ( 65,  95,  55, 255)  # Destroyer hull  (military olive)
+DECK_OLIVE   = (100, 140,  80, 255)
+TORP_ORANGE  = (210, 130,  30, 255)  # torpedo tube highlight
+
 
 UNIT_IMAGES = {
     # id  : (template_fn, arg1,         arg2,         arg3)
@@ -153,6 +180,10 @@ UNIT_IMAGES = {
     130: (_battleship_template,  HULL_DKGRAY, DECK_DKGRAY, TURRET_DKGRAY),
     131: (_battleship_template,  HULL_DKGRAY, (110,115,120,255),    TURRET_DKGRAY),
     132: (_battleship_template,  HULL_DKGRAY, (120,125,130,255),    (25,28,32,255)),
+    # Destroyer line (ID 104) — ImageIDs 140-142
+    140: (_destroyer_template,   HULL_OLIVE,  DECK_OLIVE,  TORP_ORANGE),
+    141: (_destroyer_template,   HULL_OLIVE,  (115,155,90,255),     TORP_ORANGE),
+    142: (_destroyer_template,   (50,75,42,255), (90,130,65,255),   (230,150,40,255)),
 }
 
 

@@ -1,0 +1,46 @@
+{
+  "Army": [
+    {
+      "Name": "Torpedo Boat",
+      "ImageID": 140,
+      "UnitLevel": 0,
+      "Attack": 30.0,
+      "Defense": 12.0,
+      "MovementSpeed": 3.2,
+      "AttackRange": 2,
+      "SiegeProgress": 0.10,
+      "RequiredTechID": 510,
+      "Cost": 280,
+      "MaintenanceCost": 4.5,
+      "RecruitmentTime": 75
+    },
+    {
+      "Name": "Destroyer",
+      "ImageID": 141,
+      "UnitLevel": 1,
+      "Attack": 55.0,
+      "Defense": 35.0,
+      "MovementSpeed": 3.2,
+      "AttackRange": 3,
+      "SiegeProgress": 0.22,
+      "RequiredTechID": 511,
+      "Cost": 550,
+      "MaintenanceCost": 9.0,
+      "RecruitmentTime": 100
+    },
+    {
+      "Name": "Fleet Destroyer",
+      "ImageID": 142,
+      "UnitLevel": 2,
+      "Attack": 95.0,
+      "Defense": 70.0,
+      "MovementSpeed": 3.4,
+      "AttackRange": 4,
+      "SiegeProgress": 0.38,
+      "RequiredTechID": 512,
+      "Cost": 950,
+      "MaintenanceCost": 15.0,
+      "RecruitmentTime": 120
+    }
+  ]
+}

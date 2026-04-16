@@ -76,5 +76,44 @@
     "ResearchCost": 1300,
     "Repeatable": false,
     "AI": 6
+  },
+  {
+    "ID": 510,
+    "Name": "TorpedoWarfare",
+    "ImageID": 510,
+    "TreeColumn": 21,
+    "TreeRow": 4,
+    "RequiredTech": 500,
+    "RequiredTech2": -1,
+    "BattleWidth": 0,
+    "ResearchCost": 250,
+    "Repeatable": false,
+    "AI": 3
+  },
+  {
+    "ID": 511,
+    "Name": "DestroyerDesign",
+    "ImageID": 511,
+    "TreeColumn": 22,
+    "TreeRow": 4,
+    "RequiredTech": 510,
+    "RequiredTech2": -1,
+    "BattleWidth": 1,
+    "ResearchCost": 420,
+    "Repeatable": false,
+    "AI": 4
+  },
+  {
+    "ID": 512,
+    "Name": "GuidedMissileSystems",
+    "ImageID": 512,
+    "TreeColumn": 23,
+    "TreeRow": 4,
+    "RequiredTech": 511,
+    "RequiredTech2": -1,
+    "BattleWidth": 2,
+    "ResearchCost": 750,
+    "Repeatable": false,
+    "AI": 5
   }
 ]
