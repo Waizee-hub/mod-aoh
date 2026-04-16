@@ -1,0 +1,46 @@
+{
+  "Army": [
+    {
+      "Name": "Frigate",
+      "ImageID": 100,
+      "UnitLevel": 0,
+      "Attack": 8.0,
+      "Defense": 5.0,
+      "MovementSpeed": 2.8,
+      "AttackRange": 2,
+      "SiegeProgress": 0.05,
+      "RequiredTechID": -1,
+      "Cost": 80,
+      "MaintenanceCost": 1.2,
+      "RecruitmentTime": 40
+    },
+    {
+      "Name": "Heavy Frigate",
+      "ImageID": 101,
+      "UnitLevel": 1,
+      "Attack": 14.0,
+      "Defense": 10.0,
+      "MovementSpeed": 2.8,
+      "AttackRange": 2,
+      "SiegeProgress": 0.08,
+      "RequiredTechID": -1,
+      "Cost": 140,
+      "MaintenanceCost": 2.0,
+      "RecruitmentTime": 50
+    },
+    {
+      "Name": "Frigate Squadron",
+      "ImageID": 102,
+      "UnitLevel": 2,
+      "Attack": 22.0,
+      "Defense": 16.0,
+      "MovementSpeed": 3.0,
+      "AttackRange": 3,
+      "SiegeProgress": 0.12,
+      "RequiredTechID": -1,
+      "Cost": 220,
+      "MaintenanceCost": 3.2,
+      "RecruitmentTime": 60
+    }
+  ]
+}

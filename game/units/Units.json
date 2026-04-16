@@ -1,0 +1,22 @@
+[
+  {
+    "File": "Frigate.json",
+    "ID": 100,
+    "Line": 0
+  },
+  {
+    "File": "ShipOfTheLine.json",
+    "ID": 101,
+    "Line": 0
+  },
+  {
+    "File": "Ironclad.json",
+    "ID": 102,
+    "Line": 0
+  },
+  {
+    "File": "Battleship.json",
+    "ID": 103,
+    "Line": 0
+  }
+]

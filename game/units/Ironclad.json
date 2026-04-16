@@ -1,0 +1,46 @@
+{
+  "Army": [
+    {
+      "Name": "Ironclad",
+      "ImageID": 120,
+      "UnitLevel": 0,
+      "Attack": 42.0,
+      "Defense": 50.0,
+      "MovementSpeed": 2.2,
+      "AttackRange": 3,
+      "SiegeProgress": 0.30,
+      "RequiredTechID": 10,
+      "Cost": 420,
+      "MaintenanceCost": 6.5,
+      "RecruitmentTime": 90
+    },
+    {
+      "Name": "Advanced Ironclad",
+      "ImageID": 121,
+      "UnitLevel": 1,
+      "Attack": 58.0,
+      "Defense": 68.0,
+      "MovementSpeed": 2.4,
+      "AttackRange": 3,
+      "SiegeProgress": 0.38,
+      "RequiredTechID": 10,
+      "Cost": 580,
+      "MaintenanceCost": 9.0,
+      "RecruitmentTime": 105
+    },
+    {
+      "Name": "Ironclad Dreadnought",
+      "ImageID": 122,
+      "UnitLevel": 2,
+      "Attack": 78.0,
+      "Defense": 90.0,
+      "MovementSpeed": 2.6,
+      "AttackRange": 4,
+      "SiegeProgress": 0.48,
+      "RequiredTechID": 10,
+      "Cost": 780,
+      "MaintenanceCost": 12.0,
+      "RecruitmentTime": 120
+    }
+  ]
+}

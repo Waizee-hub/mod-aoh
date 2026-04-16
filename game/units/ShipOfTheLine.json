@@ -1,0 +1,46 @@
+{
+  "Army": [
+    {
+      "Name": "Ship of the Line",
+      "ImageID": 110,
+      "UnitLevel": 0,
+      "Attack": 22.0,
+      "Defense": 18.0,
+      "MovementSpeed": 2.0,
+      "AttackRange": 3,
+      "SiegeProgress": 0.15,
+      "RequiredTechID": -1,
+      "Cost": 220,
+      "MaintenanceCost": 3.5,
+      "RecruitmentTime": 70
+    },
+    {
+      "Name": "2nd Rate Ship",
+      "ImageID": 111,
+      "UnitLevel": 1,
+      "Attack": 32.0,
+      "Defense": 27.0,
+      "MovementSpeed": 2.0,
+      "AttackRange": 3,
+      "SiegeProgress": 0.20,
+      "RequiredTechID": -1,
+      "Cost": 340,
+      "MaintenanceCost": 5.0,
+      "RecruitmentTime": 85
+    },
+    {
+      "Name": "1st Rate Ship",
+      "ImageID": 112,
+      "UnitLevel": 2,
+      "Attack": 45.0,
+      "Defense": 38.0,
+      "MovementSpeed": 2.2,
+      "AttackRange": 4,
+      "SiegeProgress": 0.28,
+      "RequiredTechID": -1,
+      "Cost": 480,
+      "MaintenanceCost": 7.0,
+      "RecruitmentTime": 100
+    }
+  ]
+}

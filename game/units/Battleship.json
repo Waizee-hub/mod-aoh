@@ -1,0 +1,46 @@
+{
+  "Army": [
+    {
+      "Name": "Battleship",
+      "ImageID": 130,
+      "UnitLevel": 0,
+      "Attack": 85.0,
+      "Defense": 78.0,
+      "MovementSpeed": 2.6,
+      "AttackRange": 5,
+      "SiegeProgress": 0.55,
+      "RequiredTechID": 20,
+      "Cost": 900,
+      "MaintenanceCost": 14.0,
+      "RecruitmentTime": 130
+    },
+    {
+      "Name": "Dreadnought",
+      "ImageID": 131,
+      "UnitLevel": 1,
+      "Attack": 115.0,
+      "Defense": 105.0,
+      "MovementSpeed": 2.8,
+      "AttackRange": 5,
+      "SiegeProgress": 0.65,
+      "RequiredTechID": 20,
+      "Cost": 1200,
+      "MaintenanceCost": 19.0,
+      "RecruitmentTime": 150
+    },
+    {
+      "Name": "Super Battleship",
+      "ImageID": 132,
+      "UnitLevel": 2,
+      "Attack": 150.0,
+      "Defense": 135.0,
+      "MovementSpeed": 3.0,
+      "AttackRange": 6,
+      "SiegeProgress": 0.78,
+      "RequiredTechID": 20,
+      "Cost": 1600,
+      "MaintenanceCost": 25.0,
+      "RecruitmentTime": 170
+    }
+  ]
+}
