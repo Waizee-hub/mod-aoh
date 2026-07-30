@@ -82,6 +82,29 @@ def _ship_template(hull: tuple, deck: tuple, flag: tuple) -> list[list]:
     ]
 
 
+def _destroyer_template(hull: tuple, deck: tuple, torpedo: tuple) -> list[list]:
+    """16×16 sleek top-down destroyer silhouette (narrower than battleship)."""
+    H, D, To = hull, deck, torpedo
+    return [
+        [T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T],
+        [T, T, T, T, T, T, T, H, H, T, T, T, T, T, T, T],
+        [T, T, T, T, T, T, H, D, D, H, T, T, T, T, T, T],
+        [T, T, T, T, T, H, D, D, D, D, H, T, T, T, T, T],
+        [T, T, T, T, H, D, To, D, D, To, D, H, T, T, T, T],
+        [T, T, T, H, D, D, D, D, D, D, D, D, H, T, T, T],
+        [T, T, H, D, D, D, D, D, D, D, D, D, D, H, T, T],
+        [T, H, D, D, D, D, To, D, D, To, D, D, D, D, H, T],
+        [T, H, D, D, D, D, To, D, D, To, D, D, D, D, H, T],
+        [T, T, H, D, D, D, D, D, D, D, D, D, D, H, T, T],
+        [T, T, T, H, D, D, D, D, D, D, D, D, H, T, T, T],
+        [T, T, T, T, H, D, To, D, D, To, D, H, T, T, T, T],
+        [T, T, T, T, T, H, D, D, D, D, H, T, T, T, T, T],
+        [T, T, T, T, T, T, H, D, D, H, T, T, T, T, T, T],
+        [T, T, T, T, T, T, T, H, H, T, T, T, T, T, T, T],
+        [T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T],
+    ]
+
+
 def _battleship_template(hull: tuple, deck: tuple, turret: tuple) -> list[list]:
     """16×16 larger-looking battleship silhouette."""
     H, D, Tu = hull, deck, turret
@@ -138,6 +161,10 @@ HULL_DKGRAY  = ( 60,  65,  70, 255)  # Battleship hull
 DECK_DKGRAY  = (100, 105, 110, 255)
 TURRET_DKGRAY= ( 35,  38,  42, 255)
 
+HULL_TEAL    = ( 20, 110,  90, 255)  # Destroyer hull
+DECK_TEAL    = ( 45, 160, 130, 255)
+TORPEDO_ORG  = (220, 120,  40, 255)
+
 
 UNIT_IMAGES = {
     # id  : (template_fn, arg1,         arg2,         arg3)
@@ -153,6 +180,9 @@ UNIT_IMAGES = {
     130: (_battleship_template,  HULL_DKGRAY, DECK_DKGRAY, TURRET_DKGRAY),
     131: (_battleship_template,  HULL_DKGRAY, (110,115,120,255),    TURRET_DKGRAY),
     132: (_battleship_template,  HULL_DKGRAY, (120,125,130,255),    (25,28,32,255)),
+    140: (_destroyer_template,   HULL_TEAL,   DECK_TEAL,   TORPEDO_ORG),
+    141: (_destroyer_template,   HULL_TEAL,   (55,175,145,255),     TORPEDO_ORG),
+    142: (_destroyer_template,   HULL_TEAL,   (65,190,160,255),     (235,135,50,255)),
 }
 
 

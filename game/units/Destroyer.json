@@ -1,0 +1,46 @@
+{
+  "Army": [
+    {
+      "Name": "Torpedo Gunboat",
+      "ImageID": 140,
+      "UnitLevel": 0,
+      "Attack": 35.0,
+      "Defense": 20.0,
+      "MovementSpeed": 3.5,
+      "AttackRange": 3,
+      "SiegeProgress": 0.20,
+      "RequiredTechID": 506,
+      "Cost": 300,
+      "MaintenanceCost": 5.0,
+      "RecruitmentTime": 75
+    },
+    {
+      "Name": "Destroyer",
+      "ImageID": 141,
+      "UnitLevel": 1,
+      "Attack": 55.0,
+      "Defense": 38.0,
+      "MovementSpeed": 3.8,
+      "AttackRange": 4,
+      "SiegeProgress": 0.30,
+      "RequiredTechID": 507,
+      "Cost": 520,
+      "MaintenanceCost": 8.0,
+      "RecruitmentTime": 95
+    },
+    {
+      "Name": "Torpedo Cruiser",
+      "ImageID": 142,
+      "UnitLevel": 2,
+      "Attack": 80.0,
+      "Defense": 60.0,
+      "MovementSpeed": 4.0,
+      "AttackRange": 4,
+      "SiegeProgress": 0.42,
+      "RequiredTechID": 508,
+      "Cost": 750,
+      "MaintenanceCost": 12.0,
+      "RecruitmentTime": 115
+    }
+  ]
+}

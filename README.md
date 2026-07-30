@@ -1,6 +1,6 @@
 # Maritime Combat Units — Age of History III Mod
 
-Adds **4 new naval unit types** (12 units total with upgrade tiers) to Age of History III, covering the full arc of maritime warfare from the Age of Sail to the modern era.
+Adds **5 new naval unit types** (15 units total with upgrade tiers) to Age of History III, covering the full arc of maritime warfare from the Age of Sail to the modern era.
 
 ---
 
@@ -9,9 +9,10 @@ Adds **4 new naval unit types** (12 units total with upgrade tiers) to Age of Hi
 | Type | ID | Tiers | Era |
 |---|---|---|---|
 | **Frigate** | 100 | Frigate → Heavy Frigate → Frigate Squadron | Age of Sail |
-| **Ship of the Line** | 101 | 3rd Rate → 2nd Rate → 1st Rate | Age of Sail |
+| **Ship of the Line** | 101 | Ship of the Line → 2nd Rate Ship → 1st Rate Ship | Age of Sail |
 | **Ironclad** | 102 | Ironclad → Advanced Ironclad → Ironclad Dreadnought | Industrial |
 | **Battleship** | 103 | Battleship → Dreadnought → Super Battleship | Modern |
+| **Destroyer** | 104 | Torpedo Gunboat → Destroyer → Torpedo Cruiser | Industrial / Modern |
 
 ### Stats overview
 
@@ -29,9 +30,11 @@ Adds **4 new naval unit types** (12 units total with upgrade tiers) to Age of Hi
 | Battleship | 85 | 78 | 2.6 | 5 | 900 | 14.0 |
 | Dreadnought | 115 | 105 | 2.8 | 5 | 1200 | 19.0 |
 | Super Battleship | 150 | 135 | 3.0 | 6 | 1600 | 25.0 |
+| **Torpedo Gunboat** | **35** | **20** | **3.5** | **3** | **300** | **5.0** |
+| **Destroyer** | **55** | **38** | **3.8** | **4** | **520** | **8.0** |
+| **Torpedo Cruiser** | **80** | **60** | **4.0** | **4** | **750** | **12.0** |
 
-> Ironclad and Battleship tiers require **Technology IDs 10 and 20** respectively.  
-> Adjust `RequiredTechID` in the JSON files to match your game's actual tech tree IDs.
+The **Destroyer** line is the fastest unit type in the mod, prioritising offensive torpedoing power over armour. Its high `MovementSpeed` (3.5–4.0) makes it ideal for flanking and raiding, while lower defence values mean it must be used aggressively rather than defensively.
 
 ---
 
@@ -55,6 +58,7 @@ Adds **4 new naval unit types** (12 units total with upgrade tiers) to Age of Hi
            ├── ShipOfTheLine.json
            ├── Ironclad.json
            ├── Battleship.json
+           ├── Destroyer.json
            └── unitsImages/
                ├── H/      (16×16 PNGs)
                ├── XH/     (32×32 PNGs)
@@ -83,6 +87,7 @@ Requires Python 3.10+ (no third-party dependencies).
 | `game/units/ShipOfTheLine.json` | Ship of the Line upgrade tree (3 levels) |
 | `game/units/Ironclad.json` | Ironclad upgrade tree (3 levels) |
 | `game/units/Battleship.json` | Battleship upgrade tree (3 levels) |
+| `game/units/Destroyer.json` | Destroyer upgrade tree (3 levels) |
 | `game/languages/EN.properties` | English names & descriptions |
 | `game/languages/FR.properties` | French names & descriptions |
 | `generate_unit_images.py` | Script to regenerate placeholder PNGs |
@@ -101,4 +106,4 @@ Requires Python 3.10+ (no third-party dependencies).
 ## Compatibility
 
 - Age of History III (all versions as of 2024–2025)
-- Does **not** overwrite any existing unit — safe to combine with other mods that don't use IDs 100–103 and ImageIDs 100–132.
+- Does **not** overwrite any existing unit — safe to combine with other mods that don't use IDs 100–104, ImageIDs 100–142, and Tech IDs 500–508.

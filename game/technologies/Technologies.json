@@ -76,5 +76,44 @@
     "ResearchCost": 1300,
     "Repeatable": false,
     "AI": 6
+  },
+  {
+    "ID": 506,
+    "Name": "TorpedoTechnology",
+    "ImageID": 506,
+    "TreeColumn": 21,
+    "TreeRow": 4,
+    "RequiredTech": 501,
+    "RequiredTech2": -1,
+    "BattleWidth": 1,
+    "ResearchCost": 320,
+    "Repeatable": false,
+    "AI": 4
+  },
+  {
+    "ID": 507,
+    "Name": "DestroyerConstruction",
+    "ImageID": 507,
+    "TreeColumn": 22,
+    "TreeRow": 4,
+    "RequiredTech": 506,
+    "RequiredTech2": -1,
+    "BattleWidth": 2,
+    "ResearchCost": 520,
+    "Repeatable": false,
+    "AI": 5
+  },
+  {
+    "ID": 508,
+    "Name": "TorpedoCruiserDesign",
+    "ImageID": 508,
+    "TreeColumn": 23,
+    "TreeRow": 4,
+    "RequiredTech": 507,
+    "RequiredTech2": -1,
+    "BattleWidth": 2,
+    "ResearchCost": 780,
+    "Repeatable": false,
+    "AI": 5
   }
 ]

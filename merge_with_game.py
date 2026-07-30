@@ -47,6 +47,7 @@ MOD_UNIT_ENTRIES = [
     {"File": "ShipOfTheLine.json", "ID": 101, "Line": 0},
     {"File": "Ironclad.json",      "ID": 102, "Line": 0},
     {"File": "Battleship.json",    "ID": 103, "Line": 0},
+    {"File": "Destroyer.json",     "ID": 104, "Line": 0},
 ]
 
 MOD_TECH_ENTRIES = [
@@ -56,6 +57,9 @@ MOD_TECH_ENTRIES = [
     {"ID": 503, "Name": "SteelNavalEngineering",  "ImageID": 503, "TreeColumn": 23, "TreeRow": 3, "RequiredTech": 502, "RequiredTech2": -1, "BattleWidth": 2, "ResearchCost": 650,  "Repeatable": False, "AI": 5},
     {"ID": 504, "Name": "ModernNavalGunnery",     "ImageID": 504, "TreeColumn": 24, "TreeRow": 3, "RequiredTech": 503, "RequiredTech2": -1, "BattleWidth": 2, "ResearchCost": 900,  "Repeatable": False, "AI": 5},
     {"ID": 505, "Name": "NavalSupremacy",         "ImageID": 505, "TreeColumn": 25, "TreeRow": 3, "RequiredTech": 504, "RequiredTech2": -1, "BattleWidth": 4, "ResearchCost": 1300, "Repeatable": False, "AI": 6},
+    {"ID": 506, "Name": "TorpedoTechnology",      "ImageID": 506, "TreeColumn": 21, "TreeRow": 4, "RequiredTech": 501, "RequiredTech2": -1, "BattleWidth": 1, "ResearchCost": 320,  "Repeatable": False, "AI": 4},
+    {"ID": 507, "Name": "DestroyerConstruction",  "ImageID": 507, "TreeColumn": 22, "TreeRow": 4, "RequiredTech": 506, "RequiredTech2": -1, "BattleWidth": 2, "ResearchCost": 520,  "Repeatable": False, "AI": 5},
+    {"ID": 508, "Name": "TorpedoCruiserDesign",   "ImageID": 508, "TreeColumn": 23, "TreeRow": 4, "RequiredTech": 507, "RequiredTech2": -1, "BattleWidth": 2, "ResearchCost": 780,  "Repeatable": False, "AI": 5},
 ]
 
 MOD_UNIT_IDS  = {e["ID"] for e in MOD_UNIT_ENTRIES}
